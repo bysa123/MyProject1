@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滤镜</title>
+    <style type="text/css">
+    img{
+        width:400px;
+        height:auto;
+        display: block;
+        margin: 0 auto;
+        transition: all 3s;
+    }
+    img:hover{
+        -webkit-filter: none;
+    }
+    .img1{
+         /*滤镜属性
+        grayscale设置灰度：1是百分之百*/
+        -webkit-filter: grayscale(1);
+        transition: all 3s;
+    }
+    .img2{
+         /*滤镜属性
+        brightness设置亮度：默认值是1，正常亮度*/
+        -webkit-filter: brightness(0);
+    }
+    .img3{
+        /*褐色属性
+        sepia：1百分百褐色*/
+    }
+    </style>
+</head>
+<body>
+    <img class="img1" src="img/h.jpg">
+    <img class="img2"src="img/h.jpg">
+    <img class="img3"src="img/h.jpg">
+</body>
+</html>
